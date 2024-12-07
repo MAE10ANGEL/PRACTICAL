@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX 4</title>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        gap: 4px;
+        height: calc(100vh - 8px);
+    }
+
+    nav {
+        border: 1px solid black;
+        display: flex;
+        gap: 4px;
+        padding: 4px;
+        justify-content: space-between;
+    }
+
+    .navleft {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navright {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .redbox1 {
+        background: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .bluebox {
+        background-color: blue;
+        height: 30px;
+        width: 40px;
+
+    }
+
+    .content {
+        display: flex;
+        gap: 4px;
+        flex-grow: 1;
+    }
+
+    main {
+        border: 1px solid black;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        gap: 4px;
+    }
+
+    .text-above {
+        font-size: 16px;
+        margin-top: 4px;text-align: center;
+    }
+    .mainbox {
+        border: 1px solid black;
+        height: 30vh;
+        width: 23vw;
+        justify-items: center;
+        padding: 4px;
+        gap: 4px;
+    }
+
+    .box {
+        border: 1px solid black;
+        height: 25vh;
+        width: 22vw;
+        padding: 4px;
+        gap: 4px;
+    }
+    aside {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        width: 260px;
+        gap: 4px;
+    }
+    .asidebox {
+        border: 1px solid black;
+        width: 250px;
+        height: 4vh;
+        padding: 4px;
+        gap: 4px;
+    }
+    footer {
+        border: 1px solid black;
+        gap: 4px;
+    }
+    .footerbox1 {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 4px;
+        padding: 4px;
+    }
+    .red {
+        background: red;
+        height: 40px;
+        width: 40px;
+    }
+    .footerbox2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4px;
+    }
+    .footerbox {
+        background: red;
+        height: 20px;
+        width: 20px;
+        gap: 4px;
+    }
+    .footertext2 {
+        text-align: center;
+        gap: 4px;
+    }
+    hr {
+        padding: 4px;
+    }
+</style>
+</head>
+<body>
+<nav>
+    <div class="navleft">
+        <div class="redbox1"></div>
+        <div>
+        <p>FLEXBOX</p>
+        </div>
+    </div>
+    <div class="navright">
+        <div class="bluebox"></div>
+        <div class="bluebox"></div>
+    </div>
+</nav>
+<div class="content">
+    <main>
+        <div class="mainbox">
+            <div class="text-above">Main Box 1</div>
+            <div class="box"></div>
+        </div>
+        <div class="mainbox">
+            <div class="text-above">Main Box 2</div>
+            <div class="box"></div>
+        </div>
+    </main>
+    <aside>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+        <div class="asidebox"></div>
+    </aside>
+</div>
+<footer>
+    <div class="footerbox1">
+        <div class="red"></div>
+        <div class="footertext1">
+            <div>FLEXBOX</div>
+        </div>
+    </div>
+      <hr>
+    <div class="footerbox2">
+        <div class="footerbox"></div>
+        <div class="footerbox"></div>
+        <div class="footerbox"></div>
+        <div class="footerbox"></div>
+        <div class="footerbox"></div>
+    </div>
+        <div class="footertext2">
+            <p>&copy;Copyright All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
